@@ -1,12 +1,70 @@
-*.class
+#################
+## Eclipse
+#################
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+*.pydevproject
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# External tool builders
+.externalToolBuilders/
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+
+#################
+## IntelliJ IDEA specified
+#################
+
+## Ignore IntelliJ IDEA and Android specified folders and files
+.idea/
+out/
+target/
+jars/
+*.iml
+*.iws
+*.ipr
+.gradle/
+
+spigot*.jar
+
+## Ignore eclipse folders and files
+.classpath
+.settings/
+.project
+
+#############
+## Windows detritus
+#############
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+
+#############
+## Mac crap
+#############
+
+.DS_Store
