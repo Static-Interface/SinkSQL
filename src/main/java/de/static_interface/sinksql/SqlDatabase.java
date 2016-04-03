@@ -540,7 +540,7 @@ public abstract class SqlDatabase extends Database {
             String name = StringUtil.isEmptyOrNull(column.name()) ? f.getName() : column.name();
 
             Index index = FieldCache.getAnnotation(f, Index.class);
-            String indexName = StringUtil.isEmptyOrNull(index.name()) ? name + "_I" : index.name();
+            String indexName = StringUtil.isEmptyOrNull(index.name()) ? name + "_I_" + abstractTable.getName().toLowerCase() : index.name();
 
             sql += "INDEX " + bt + indexName + bt + " (" + bt + name + bt + ")";
 
